@@ -7,6 +7,9 @@
 #include <SDL2/SDL_render.h>
 #include <SDL2/SDL_video.h>
 
+#define WINDOW_WIDTH  640
+#define WINDOW_HEIGHT 480
+
 int
 main() {
     // initialize the SDL audio and video subsystems
@@ -16,8 +19,8 @@ main() {
     }
 
     // create the SDL window
-    SDL_Window* window = SDL_CreateWindow("Space Invaders", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480,
-                                          SDL_WINDOW_RESIZABLE);
+    SDL_Window* window = SDL_CreateWindow("Space Invaders", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
+                                          WINDOW_WIDTH, WINDOW_HEIGHT, SDL_WINDOW_RESIZABLE);
     if (window == NULL) {
         printf("%s", SDL_GetError());
         return 1;
