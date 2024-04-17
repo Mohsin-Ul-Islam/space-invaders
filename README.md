@@ -25,6 +25,6 @@ make run
 
 All of the artwork has been picked up from the below sources.
 
-[Audio](https://www.classicgaming.cc/classics/space-invaders/sounds)
-[Graphics](https://www.classicgaming.cc/classics/space-invaders/graphics)
+1. [Audio](https://www.classicgaming.cc/classics/space-invaders/sounds)
+2. [Graphics](https://www.classicgaming.cc/classics/space-invaders/graphics)
 
