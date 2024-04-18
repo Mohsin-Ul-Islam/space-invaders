@@ -12,6 +12,12 @@ typedef struct {
     // y coordinate of the bullet position
     int y;
 
+    // the width of the bullet
+    int w;
+
+    // the height of the bullet
+    int h;
+
     // movespeed  of the bullet
     int speed;
 } bullet_t;
@@ -22,6 +28,12 @@ typedef struct {
 
     // y coordinate of the player position
     int y;
+
+    // the width of the player
+    int w;
+
+    // the height of the player
+    int h;
 
     // movespeed  of the player
     int speed;

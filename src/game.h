@@ -1,13 +1,18 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include "invader.h"
+#include "player.h"
+
 #include <SDL2/SDL_events.h>
 #include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_render.h>
-#include "player.h"
 
 // number of audio files
 #define AUDIO_COUNT           8
+
+// number of invaders
+#define INVADERS_COUNT        30
 
 // indices of the audio files
 // these will be used in the audio file array
@@ -35,6 +40,18 @@ typedef struct {
 
     // player
     player_t* player;
+
+    // the render rect of the game
+    SDL_Rect* rect;
+
+    // the invaders
+    invader_t* invaders[INVADERS_COUNT];
+
+    // the timer accumulater
+    size_t timer;
+
+    // the direction of the invaders moving collectively
+    int invaders_direction;
 } game_t;
 
 // initialize the game entities

@@ -10,5 +10,5 @@ debug: src/*.c src/*.h
 run: build
 	./main
 
-clean: main
-	rm main
+clean: 
+	rm main debug
