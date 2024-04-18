@@ -18,6 +18,9 @@ typedef struct {
 
     // the y coordinate of the invader's position
     int y;
+
+    // type of the invader
+    invader_type_t type;
 } invader_t;
 
 #endif // INVADER_H
