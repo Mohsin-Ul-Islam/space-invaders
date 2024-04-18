@@ -1,3 +1,5 @@
+![Screenshot of a running game](./screenshots/game.png)
+
 # Space Invaders
 Implementation of a classical [Space Invaders](https://en.wikipedia.org/wiki/Space_Invaders) game in C using SDL2.
 
