@@ -12,7 +12,7 @@ player_create(int x, int y) {
     player->y = y;
     player->w = 60;
     player->h = 20;
-    player->speed = 1;
+    player->speed = 5;
     player->direction = NONE;
 
     player->bullet->x = player->x + player->w / 2;
@@ -62,7 +62,7 @@ player_move(player_t* player, size_t delta_time) {
 void
 player_shoot(player_t* player) {
     if (player->bullet->speed == 0) {
-        player->bullet->speed = 1;
+        player->bullet->speed = 10;
     }
 }
 

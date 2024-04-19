@@ -105,7 +105,7 @@ game_tick(size_t delta_time) {
         }
 
         for (int i = 0; i < INVADERS_COUNT; i++) {
-            game->invaders[i]->x += 4 * game->invaders_direction;
+            game->invaders[i]->x += INVADER_WIDTH * game->invaders_direction;
         }
     }
 }

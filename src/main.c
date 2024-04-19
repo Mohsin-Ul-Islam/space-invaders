@@ -91,10 +91,10 @@ main() {
         SDL_RenderPresent(renderer);
 
         // cap the frame rate
-        elapsed = elapsed + (SDL_GetTicks64() - start);
-        if (elapsed > 1000 / frame_rate) {
-            SDL_Delay(elapsed - 1000 / frame_rate);
-            elapsed = 0;
+        elapsed = SDL_GetTicks64() - start;
+        if (elapsed < 1000 / frame_rate) {
+            SDL_Delay(1000 / frame_rate - elapsed);
+            elapsed = 1000 / frame_rate;
         }
     }
 
